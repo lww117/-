@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--设置初始缩放比例为1.0，使用设备宽度,不允许用户缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <meta name="MobileOptimized" content="320">
+    <!--在ios下开启全屏模式 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--隐藏safari状态栏-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank">
+    <title>手势密码</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+    <div class="head">
+        <span style="font-size: 1.3rem">手势密码</span>
+    </div>
+    <script type="text/javascript" src="PatternLock.js"></script>
+    <script type="text/javascript">
+        new PatternLock({
+            chooseType: 3
+        }).init();
+    </script>
+</body>
+</html>
